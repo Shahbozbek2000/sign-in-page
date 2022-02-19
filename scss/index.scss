@@ -1,0 +1,100 @@
+@import "colors";
+@import "mixins";
+@import "button";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-type;
+}
+
+.signin-layout {
+  width: 100%;
+  height: 100vh;
+  background-color: $main-background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__card {
+    @include cardComponent();
+  }
+  &__cardHeader {
+    z-index: 1;
+    background: $card-header-bgColor;
+    border-radius: 4px 4px 0px 0px;
+    height: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__cardHeaderLeft {
+    margin-left: 20px;
+    color: $card-header-color;
+    p {
+      font-weight: 500;
+      font-size: 15px;
+    }
+    span {
+      font-weight: normal;
+      font-size: 12px;
+    }
+    @media only screen and (max-width: 576px) {
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+    
+  }
+  &__avatarContainer {
+    position: absolute;
+    width: 100%;
+    top: 83px;
+    left: 22px;
+    z-index: 10;
+    & img {
+      border-radius: 50%;
+    }
+    @media (max-width: 576px) {
+        top: 15px;
+    }
+    @media only screen and (max-width: 380px) {
+        display: none;
+    }
+  }
+  &__imgContainer {
+      @media only screen and (max-width: 576px) {
+          display: none;
+      }
+  }
+  &__formContainer {
+    @include formComponent();
+  }
+  &__formGroup {
+    width: 100%;
+    margin: 16px 0;
+    label {
+      font-weight: 500;
+      font-size: 12px;
+      color: $input-color;
+    }
+    @include inputComponent();
+  }
+  &__buttonGroup {
+    @include buttonComponent();
+  }
+  &__formFooter {
+    text-align: center;
+    span {
+      font-size: 12px;
+      color: #74788d;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 10px 0px;
+    }
+  }
+}

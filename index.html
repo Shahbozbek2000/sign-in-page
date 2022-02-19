@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sass 2-dars</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- SIGN IN PAGE STARTED -->
+    <section class="signin-layout">
+      <div class="signin-layout__card">
+        <div class="signin-layout__cardHeader">
+          <div class="signin-layout__cardHeaderLeft">
+            <p>Welcome Back !</p>
+            <span>Sign in to continue</span>
+          </div>
+          <div class="signin-layout__imgContainer">
+            <img src="/images/card-header.svg" alt="card-header" />
+          </div>
+        </div>
+        <div class="signin-layout__avatarContainer">
+          <img
+            src="/images/avatar.svg"
+            alt="avatar"
+            class="signin-layout__profileContainer"
+          />
+        </div>
+        <div class="signin-layout__cardContent">
+          <form class="signin-layout__formContainer">
+            <div class="signin-layout__formGroup">
+              <label>Username</label><br />
+              <input type="text" placeholder="Enter username" />
+            </div>
+            <div class="signin-layout__formGroup">
+              <label>Password</label><br />
+              <input type="password" placeholder="Enter password" />
+            </div>
+            <div class="signin-layout__formGroup">
+              <label><input type="checkbox" /> Remember me</label><br />
+              <button type="submit" class="signin-layout__buttonGroup">
+                Log In
+              </button>
+            </div>
+            <div class="signin-layout__formFooter">
+              <span><i class="fa-solid fa-lock"></i></span>
+              <span>Forgot your password?</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGN IN PAGE FINISHED -->
+  </body>
+</html>
